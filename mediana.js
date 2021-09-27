@@ -1,10 +1,12 @@
-function calcularMediaAritmetica(lista) {
-  const sumaLista = lista.reduce(
+function calcularMediaAritmetica() {
+  const input = document.getElementById("")
+  const value = input.value
+  const sumaLista = value.reduce(
     function (valorAcumulado = 0, nuevoElemento) {
       return valorAcumulado + nuevoElemento;
     }
   );
-  const promedioLista = sumaLista / lista.length;
+  const promedioLista = sumaLista / input.length;
   return promedioLista;
 }
 

@@ -4,11 +4,22 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mediana</title>
+  <link rel="stylesheet" href="mediana.css">
+  <title>Media Aritmetica</title>
 </head>
 <body>
-  <h1>Mediana</h1>
-  
+  <header>
+    <h1>Calcula la Media Aritmetica de cualquier lista</h1>
+    
+  </header>
+  <form action="">
+    <label for="inputLista">
+      Escribe la lista de numeros en la que quieres encontrar la mediana
+    </label>
+    <input type="number" id="inputLista" />
+    <input type="button"  class="btn-grad-b" value="Agregar numero a lista" onclick="calcularMediaAritmetica()">
+    <input type="button"  class="btn-grad" value="Calcular Media Aritmetica" onclick="calcularMediaAritmetica()">
+  </form>
   <script src="./mediana.js"></script>
 </body>
 </html>
