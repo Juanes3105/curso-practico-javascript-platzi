@@ -54,11 +54,11 @@ body{
 .inputLista{
     width: 3vw;
     height: 5px;
-    background: none;
+    background: #ffffff;
     padding: 20px;
     border: none;
     outline: none;
-    border-bottom: 1px solid rgb(0, 0, 0);
+    border-bottom: 2px solid #008cce;
     margin-top: 19px;
 }
 
@@ -71,7 +71,7 @@ form{
 form label{
     font-family: 'Ubuntu', sans-serif;
     font-size: xx-large;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #000000;
     width: 35vw;
     height: 10vh;
 }

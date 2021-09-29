@@ -4,11 +4,22 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="moda.css">
   <title>Moda</title>
 </head>
 <body>
   <h1>Moda</h1>
-  
+  <header>
+    <h1>Calcula la moda de cualquier lista</h1>
+  </header>
+  <form action="">
+    <label for="inputLista">
+      Escribe un <strong>Nuevo Valor</strong> a la lista
+    </label>
+    <input type="number" id="inputLista" class="inputLista" />
+    <input type="button"  class="btn-grad-b" value="Agregar numero a lista" onclick="calcularMediaAritmetica()">
+    <input type="button"  class="btn-grad" value="Calcular la moda" onclick="calcularPromedio()">
+  </form> 
   <script src="./moda.js"></script>
 </body>
 </html>
