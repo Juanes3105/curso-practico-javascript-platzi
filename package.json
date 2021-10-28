@@ -1,0 +1,23 @@
+{
+  "name": "curso-practico-javascript-platzi",
+  "version": "1.0.0",
+  "description": "...",
+  "main": "analisis.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Juanes3105/curso-practico-javascript-platzi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Juanes3105/curso-practico-javascript-platzi/issues"
+  },
+  "homepage": "https://github.com/Juanes3105/curso-practico-javascript-platzi#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}

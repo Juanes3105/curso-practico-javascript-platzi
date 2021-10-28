@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+
+
+
+
+
+
+body{
+    background-color: #ffffff;
+    background-image: linear-gradient(260deg, #ffffff 0%, #fffb00 100%);  
+}
+.btn-grad {background-image: linear-gradient(to right, #88ff00 0%, #aeff00  51%, #fbff00  100%)}
+.btn-grad {
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: black;            
+   box-shadow: 0 0 20px #000;
+   border-radius: 10px;
+   display: block;
+ }
+
+ .btn-grad:hover {
+   color: rgb(77, 77, 77);
+   text-decoration: none;
+   cursor: pointer;
+ }
+
+
+ .btn-grad-b {background-image: linear-gradient(to right, #fbff00 0%, #fbff00  51%, #aeff00  100%)}
+.btn-grad-b {
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: black;            
+   box-shadow: 0 0 20px #000;
+   border-radius: 10px;
+   display: block;
+ }
+
+ .btn-grad-b:hover {
+   color: rgb(77, 77, 77);
+   text-decoration: none;
+   cursor: cell;
+ }
+
+.inputLista{
+    width: 3vw;
+    height: 5px;
+    background: #ffffff;
+    padding: 20px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #008cce;
+    margin-top: 19px;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+form label{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: xx-large;
+    border-bottom: 1px solid #000000;
+    width: 35vw;
+    height: 10vh;
+}

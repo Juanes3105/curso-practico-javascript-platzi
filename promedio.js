@@ -1,9 +1,16 @@
+function meterValorLista() {
+  const input = document.getElementById("inputLista")
+  const value = input.value
+  lista1.push(Number(value))
+  const lista = document.getElementById("lista")
+  lista.innerText = lista1
+}
 
-function calcularPromedio() {
-  const input = document.getElementById("lista");
-  const value = input.value;
+const lista1 = [];
 
-  const sumaLista = value.reduce(
+
+function calcularPromedioBtn() {
+  const sumaLista = lista1.reduce(
     function (valorAcumulado = 0, nuevoElemento) {
       return valorAcumulado + nuevoElemento;
     }

@@ -9,18 +9,34 @@
 </head>
 <body>
   <header>
-    <h1>Calcula la Media Aritmetica de cualquier lista</h1>
+    <a href="index.html" class="asd">←</a>
+    <h1>Calcula la <strong>Media Aritmetica</strong> de cualquier lista</h1>
+    
   </header>
-  <form action="">
-    <label for="inputLista">
-      Escribe un <strong>Nuevo Valor</strong> a la lista
-    </label>
-    <input type="number" id="inputLista" class="inputLista" />
-    <input type="button"  class="btn-grad-b" value="Agregar numero a lista" onclick="calcularMediaAritmetica()">
-    <input type="button"  class="btn-grad" value="Calcular Media Aritmetica" onclick="calcularMediaAritmetica()">
-  </form>
-  <h2>Lista de elementos</h2>
-  
+  <div class="main-container">
+    <form action="">
+      <label for="inputLista">
+        Escribe un <strong>Nuevo Valor</strong> a la lista
+      </label>
+      <input type="number" id="inputLista" class="inputLista" id="inputLista"/>
+      <input type="button"  class="btn-grad-b" value="Agregar numero a lista" onclick="meterValorLista()">
+      <input type="button"  class="btn-grad" value="Calcular Media Aritmetica" onclick="CalcularMediaAritmeticaBtn()" id="btn-abrir-popup">
+    </form>
+  </div>
+    <h2>Lista de elementos</h2>
+    <p id="lista"></p>
+    <h3>Resultado:</h3>
+    <p id="Resultado"></p>
+
   <script src="./mediana.js"></script>
+
+
+  <!-- <div class="overlay" id="overlay">
+    <div class="popup" id="popup">
+      <a href="" id="btn-cerrar-popup" class="btn-cerrar-popup">X</a>
+      <h3>La <strong>Media Aritmetica</strong> de esta lista es:</h1>
+    </div>
+  </div> -->
+
 </body>
 </html>

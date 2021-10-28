@@ -1,22 +1,25 @@
-function calcularMediaAritmetica() {
-  const input = document.getElementById("")
-  const value = input.value
-  const sumaLista = value.reduce(
+function calcularMediaAritmetica(lista) {
+  const sumaLista = lista.reduce(
     function (valorAcumulado = 0, nuevoElemento) {
       return valorAcumulado + nuevoElemento;
     }
   );
-  const promedioLista = sumaLista / input.length;
+  const promedioLista = sumaLista / lista.length;
   return promedioLista;
 }
 
-const lista1 = [
-  100,
-  200,
-  500,
-  400000000,
-];
+function meterValorLista() {
+  const input = document.getElementById("inputLista")
+  const value = input.value
+  lista1.push(Number(value))
+  const lista = document.getElementById("lista")
+  lista.innerText = lista1
+}
 
+const lista1 = [];
+
+  function CalcularMediaAritmeticaBtn() {
+    
 const mitadLista1 = parseInt(lista1.length / 2);
 
 function esPar(numerito) {
@@ -41,4 +44,8 @@ if (esPar(lista1.length)) {
   mediana = promedioElemento1y2;
 } else {
   mediana = lista1[mitadLista1];
+}
+
+  const resultadoP = document.getElementById("Resultado")
+  resultadoP.innerText = mediana
 }

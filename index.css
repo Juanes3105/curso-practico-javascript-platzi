@@ -6,7 +6,8 @@
 
     body{
         background-color: #ffffff;
-        background-image: linear-gradient(90deg, #ffffff 0%, #ffff00 100%);    
+        background-image: linear-gradient(90deg, #c21500 0%, #ffc500 100%);  
+        transition: 1s ease-in all;
     }
     .main-header h1{
         font-family: 'Nunito';
@@ -20,6 +21,7 @@
         height: auto;
         text-align: center;
         margin-bottom: 14em;
+        scroll-behavior: none;
     }
 
     .excersices-list li a{
@@ -27,29 +29,40 @@
         color: black;
         text-decoration: none;
         text-align: center;
-        font-family: 'Gemunu Libre';
+        font-family: 'Arial';
+        position: relative;
+        transition: .3s ease all;
     }
 
-    .excersices-list li a:hover{
-        font-size: xx-large;
-        text-decoration: underline;
-        text-decoration-color: black;
+    .excersices-list li a:after{
+        content: '';
+        height: 2px;
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        right: 0;
+        background-image: linear-gradient(270deg, #c21500 0%, #ffc500 100%);
     }
 
     footer{
         text-align: center;
         align-items: center;
-        font-family: 'Bebas Neue';
+        font-family: 'Arial';
         font-size: xx-large;
+
     }
 
     footer a{
-        font-family: 'Bebas Neue';
+        font-family: 'Verdana';
         font-size: xx-large;
-        color: blue;
+        color: #adadad4b;
         text-decoration: none;
+        transition: .5s ease-out all;
     }
 
     footer a:hover{
-        text-decoration: underline;
-    }
+        background-image: linear-gradient(90deg, rgb(253, 14, 62) 0%, #d313fa 50%, #0d34f3 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }   
