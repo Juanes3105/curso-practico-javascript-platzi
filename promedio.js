@@ -16,7 +16,10 @@ function calcularPromedioBtn() {
     }
   );
 
-  const promedioLista = sumaLista / value.length;
+  promedio = sumaLista / lista1.length;
 
-  document.write(`El promedio de esta lista es: ${promedioLista}`)
+  const resultadoP = document.getElementById("Resultado")
+  resultadoP.innerText = promedio;
 }
+
+  let promedio;

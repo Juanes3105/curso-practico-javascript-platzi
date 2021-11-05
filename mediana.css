@@ -9,9 +9,9 @@
 
 body{
     background-color: #ffffff;
-    background-image: linear-gradient(270deg, #c21500 0%, #ffc500 100%);  
+    background-color: black;
 }
-.btn-grad {background-image: linear-gradient(to right, #88ff00 0%, #aeff00  51%, #fbff00  100%)}
+.btn-grad {background-image: linear-gradient(90deg, rgb(253, 14, 62) 0%, #d313fa 50%, #0d34f3 100%);}
 .btn-grad {
    margin: 10px;
    padding: 15px 45px;
@@ -22,9 +22,13 @@ body{
    color: black;            
    border-radius: 10px;
    display: block;
+   font-family: Arial;
+   font-weight: 800;
  }
 
  .btn-grad:hover {
+   background-position: right center;
+   color: #ffffff;
    text-decoration: none;
    cursor: pointer;
    transform: translateY(-5px);
@@ -36,7 +40,7 @@ body{
  }
 
 
- .btn-grad-b {background-image: linear-gradient(to right, #fbff00 0%, #fbff00  51%, #aeff00  100%)}
+ .btn-grad-b {background-image: linear-gradient(90deg, #0d34f3 0%, #d313fa 50%, rgb(253, 14, 62) 100%);}
 .btn-grad-b {
    margin: 10px;
    padding: 15px 45px;
@@ -47,10 +51,14 @@ body{
    color: black;            
    border-radius: 10px;
    display: block;
+   font-family: Arial;
+   font-weight: 800;
  }
 
  .btn-grad-b:hover {
+   background-position: right center;
    text-decoration: none;
+   color: #ffffff;
    cursor: cell;
    transform: translateY(-5px);
    box-shadow: 0 0 20px #000;
@@ -65,18 +73,24 @@ body{
     height: 5px;
     background: #ff000000;
     padding: 20px;
-    border: none;
     outline: none;
-    border-bottom: 4px solid #ffffff;
     margin-top: 19px;
     margin-left: 5px;
     margin-right: 50px;
+    color: white;
+    font-family: Arial;
+    border-color: white;
+    border-radius: 10px;
+}
+
+.inputLista{
+  text-decoration: none;
 }
 
 form{
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
 }
 
 form label{
@@ -84,6 +98,7 @@ form label{
     font-size: xx-large;
     width: 35vw;
     height: 10vh;
+    color: white;
 }
 
 .main-container{
@@ -94,10 +109,20 @@ h1{
   text-align: center;
   font-family: Verdana;
   margin-bottom: 100px;
+  background-image: linear-gradient(90deg, rgb(253, 14, 62) 0%, #d313fa 50%, #0d34f3 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 h2{
   font-family: Verdana;
+  color: white;
+}
+
+h3{
+  color: rgb(255, 255, 255);
+  font-family: Arial;
 }
 
 span{
@@ -106,6 +131,14 @@ span{
 
 p{
   font-family: Verdana;
+  color: white;
+}
+
+strong{
+  background-image: linear-gradient(90deg, rgb(253, 14, 62) 0%, #d313fa 50%, #0d34f3 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .btn-cerrar-popup{
@@ -133,7 +166,7 @@ p{
   display: flex;
   align-items: center;
   justify-content: center;
-  visibility: hidden;
+  visibility: visible;
 }
 
 .overlay:active{
@@ -169,7 +202,7 @@ p{
   font-size: 36px;
   font-weight: 600px;
   margin-bottom: 10px;
-  /* opacity: 0; */
+  opacity: 0;
 }
 
 .popup p{
@@ -177,7 +210,7 @@ p{
   font-weight: 300px;
   margin-bottom: 10px;
   color: rgb(0, 0, 0);
-  /* opacity: 0; */
+  opacity: 0;
 }
 
 .asd{
@@ -186,13 +219,15 @@ p{
   background-color: rgba(245, 245, 245, 0.561);
   border-radius: 15px;
   padding: 20px;
-  color: #807f7f52;
+  color: #807f7fc9;
   text-decoration: none;
   font-family: monospace;   
 }
 
 .asd:hover{
-  color: rgb(0, 64, 255);
-  background-color: #ffffffd8;
-  transition: 2s ease all;
+  color: #000;
+  background-color: #ffffff;
+  transition: 1s ease all;
 }
+
+
