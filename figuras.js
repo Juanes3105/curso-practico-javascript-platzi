@@ -79,9 +79,11 @@ console.groupEnd();
 function calcularPerimetroCuadrado() {
   const input = document.getElementById("InputCuadrado");
   const value = input.value;
+  const valueN = Number(value)
 
-  const perimetro = perimetroCuadrado(value);
-  alert(perimetro);
+  const perimetro = perimetroCuadrado(valueN);
+  const resultadoP = document.getElementById("resultado")
+  resultadoP.innerText = `El perimetro deeste cuadrado es ${perimetro}`
 }
 function calcularAreaCuadrado() {
   const input = document.getElementById("InputCuadrado");

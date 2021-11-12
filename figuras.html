@@ -3,34 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="stylesheet" href="figuras.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Figuras geométricas | Curso Práctico de JavaScript en Platzi</title>
+  <link rel="stylesheet" href="mediana.css">
+  <title>Media Aritmetica</title>
 </head>
 <body>
   <header>
-    <h1>
-      Figuras geométricas
-    </h1>
-    <p>Este es el primer taller del curso práctico de JavaScript</p>
+    <a href="index.html" class="asd">←</a>
+    <h1>Calcula el <strong>perimetro y el area</strong> de cualquier cuadrado</h1>
+    
   </header>
-
-  <section>
-    <h2>Calcula el área y perímetro de un cuadrado</h2>
-    <form>
-      <label for="InputCuadrado">
-        Escribe cuánto mide cada lado de tu cuadrado:
+  <div class="main-container">
+    <form action="">
+      <label for="inputLista">
+        Escribe un <strong>Nuevo Valor</strong> a la lista
       </label>
-      <input id="InputCuadrado" type="number" />
-      <button type="button" class="btn-grad-b" onclick="calcularPerimetroCuadrado()">
-        Calcular el perímetro
-      </button>
-      <button type="button" class="btn-grad" onclick="calcularAreaCuadrado()">
-        Calcular el área
-      </button>
+      <input type="number" id="inputCuadrado" class="inputLista"/>
+      <input type="button"  class="btn-grad-b" value="Agregar numero a lista" onclick="meterValorLista()">
+      <input type="button"  class="btn-grad" value="Calcular Area" onclick="CalcularMediaAritmeticaBtn()" id="btn-abrir-popup">
+      <input type="button"  class="btn-grad" value="Calcular Perimetro" onclick="CalcularPerimetroCuadrado()">
     </form>
-  </section>
+  </div>
+    <h3>Resultado:</h3>
+    <p id="resultado"></p>
 
-  <script src="./figuras.js"></script>
+  <script src="./mediana.js"></script>
+
+
+  <!-- <div class="overlay" id="overlay">
+    <div class="popup" id="popup">
+      <a href="" id="btn-cerrar-popup" class="btn-cerrar-popup">X</a>
+      <h3>La <strong>Media Aritmetica</strong> de esta lista es:</h1>
+    </div>
+  </div> -->
+
 </body>
 </html>
