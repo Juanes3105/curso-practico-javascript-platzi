@@ -1,13 +1,14 @@
 body{
     background-color: #ffffff;
     background-color: black; 
-    color: #ffffff;   
+    color: #ffffff; 
+    font-family: Arial;  
 }
 
 .btn-grad {background-image: linear-gradient(90deg, rgb(253, 14, 62) 0%, #d313fa 50%, #0d34f3 100%);}
 .btn-grad {
    margin: 10px;
-   margin-right: 30px;
+   margin-right: 40px;
    padding: 15px 45px;
    text-align: center;
    text-transform: uppercase;
@@ -54,7 +55,7 @@ h1{
   margin-right: 50px;
   color: white;
   font-family: Arial;
-  border-color: white;
+  border-color: rgba(255, 255, 255, 0.418);
   border-radius: 10px;
 }
 
@@ -76,7 +77,7 @@ strong{
     margin-right: 50px;
     color: white;
     font-family: Arial;
-    border-color: white;
+    border-color: rgba(255, 255, 255, 0.418);
     border-radius: 10px;
 }
 
@@ -92,4 +93,32 @@ form label{
     width: 35vw;
     height: 10vh;
     color: white;
+}
+
+input{
+  margin-bottom: 50px;
+  text-decoration: none;
+
+}
+
+input:hover{
+  border-color: #ffffff;
+  transition: ease all 1s;
+}
+
+.asd{
+  font-family: Arial;
+  font-size: 3em;
+  background-color: rgba(245, 245, 245, 0.561);
+  border-radius: 15px;
+  padding: 20px;
+  color: #807f7fc9;
+  text-decoration: none;
+  font-family: monospace;   
+}
+
+.asd:hover{
+  color: #000;
+  background-color: #ffffff;
+  transition: 1s ease all;
 }
