@@ -5,27 +5,24 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="descuentos.css">
-  <title>Porcentajes y descuentos | Curso Práctico de JavaScript en Platzi</title>
+  <title>Porcentajes y descuentos</title>
 </head>
 <body>
   <header>
     <h1>
-      Porcentajes y descuentos 
+      Calcula el precio de un producto con cualquier descuento 
     </h1>
-    <p>Este es el segundo taller del Curso Práctico de JavaScript.</p>
   </header>
 
   <section>
-    <h2>Calcula el precio a pagar de tus productoss con descuento</h2>
-
     <form>
-      <label for="InputPrice">Escribe el precio de tu producto:</label>
-      <input id="InputPrice" type="number" />
+      <label for="InputPrice">Escribe <strong>El Precio</strong> de tu producto:</label>
+      <input id="InputPrice" type="number" class="inputPrice"/>
 
-      <label for="InputDiscount">Escribe el descuento de tu producto:</label>
-      <input id="InputDiscount" type="number" />
+      <label for="InputDiscount">Escribe <strong>El Descuento</strong> de tu producto:</label>
+      <input id="InputDiscount" type="number" class="inputDiscount"/>
 
-      <button type="button" onclick="onClickButtonPriceDiscount()">
+      <button type="button" onclick="onClickButtonPriceDiscount()" class="btn-grad">
         Calcular el precio con descuento
       </button>
 

@@ -83,6 +83,21 @@ body{
     border-radius: 10px;
 }
 
+.inputCuadrado{
+  width: 3vw;
+  height: 5px;
+  background: #ff000000;
+  padding: 20px;
+  outline: none;
+  margin-top: 19px;
+  margin-left: 5px;
+  margin-right: 50px;
+  color: white;
+  font-family: Arial;
+  border-color: white;
+  border-radius: 10px;
+}
+
 .inputLista{
   text-decoration: none;
 }
