@@ -1,42 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-
-
-
 body{
-    background-color: #ffffff;
-    background-image: linear-gradient(270deg, #c21500 0%, #ffc500 100%);  
+  background-color: #ffffff;
+  background-color: black; 
+  color: #ffffff; 
+  font-family: Arial;  
 }
-.btn-grad {background-image: linear-gradient(to right, #88ff00 0%, #aeff00  51%, #fbff00  100%)}
+
+.btn-grad {background-image: linear-gradient(90deg, rgb(253, 14, 62) 0%, #d313fa 50%, #0d34f3 100%);}
 .btn-grad {
-   margin: 10px;
-   padding: 15px 45px;
-   text-align: center;
-   text-transform: uppercase;
-   transition: 0.5s;
-   background-size: 200% auto;
-   color: black;            
-   border-radius: 10px;
-   display: block;
- }
+ margin: 10px;
+ margin-right: 40px;
+ padding: 15px 45px;
+ text-align: center;
+ text-transform: uppercase;
+ transition: 0.5s;
+ background-size: 200% auto;
+ color: black;            
+ border-radius: 10px;
+ display: block;
+ font-family: Arial;
+ font-weight: 800;
+}
 
- .btn-grad:hover {
-   text-decoration: none;
-   cursor: pointer;
-   transform: translateY(-5px);
-   box-shadow: 0 0 20px #000;
- }
+.btn-grad:hover {
+ background-position: right center;
+ color: #ffffff;
+ text-decoration: none;
+ cursor: pointer;
+ transform: translateY(-5px);
+ box-shadow: 0 0 20px rgb(0, 0, 0)
+}
 
- .btn-grad:active{
-   transform: translateY(3px);
- }
+.btn-grad:active{
+ transform: translateY(3px);
+}
 
-
- .btn-grad-b {background-image: linear-gradient(to right, #fbff00 0%, #fbff00  51%, #aeff00  100%)}
+.btn-grad-b {background-image: linear-gradient(90deg, #0d34f3 0%, #d313fa 50%, rgb(253, 14, 62) 100%);}
 .btn-grad-b {
    margin: 10px;
    padding: 15px 45px;
@@ -47,11 +45,14 @@ body{
    color: black;            
    border-radius: 10px;
    display: block;
+   font-family: Arial;
+   font-weight: 800;
  }
 
  .btn-grad-b:hover {
+   background-position: right center;
    text-decoration: none;
-   cursor: cell;
+   color: #ffffff;
    transform: translateY(-5px);
    box-shadow: 0 0 20px #000;
  }
@@ -60,139 +61,76 @@ body{
    transform: translateY(3px);
  }
 
-.inputLista{
-    width: 3vw;
-    height: 5px;
-    background: #ff000000;
-    padding: 20px;
-    border: none;
-    outline: none;
-    border-bottom: 4px solid #ffffff;
-    margin-top: 19px;
-    margin-left: 5px;
-    margin-right: 50px;
-}
-
-form{
-    display: flex;
-    justify-content: center;
-    align-items: center;    
-}
-
-form label{
-    font-family: Arial;
-    font-size: xx-large;
-    width: 35vw;
-    height: 10vh;
-}
-
-.main-container{
-  margin-bottom: 100px;
-}
 
 h1{
   text-align: center;
-  font-family: Verdana;
-  margin-bottom: 100px;
+font-family: Verdana;
+margin-bottom: 100px;
+  background-image: linear-gradient(90deg, rgb(253, 14, 62) 0%, #d313fa 50%, #0d34f3 100%);
+-webkit-background-clip: text;
+background-clip: text;
+-webkit-text-fill-color: transparent;
 }
 
-h2{
-  font-family: Verdana;
+.inputLista{
+  width: 3vw;
+height: 5px;
+background: #ff000000;
+padding: 20px;
+outline: none;
+margin-top: 19px;
+margin-left: 5px;
+margin-right: 50px;
+color: white;
+font-family: Arial;
+border-color: rgba(255, 255, 255, 0.418);
+border-radius: 10px;
 }
 
-span{
-  font-family: Arial;
+strong{
+  background-image: linear-gradient(90deg, rgb(253, 14, 62) 0%, #d313fa 50%, #0d34f3 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-p{
-  font-family: Verdana;
-}
-
-.btn-cerrar-popup{
-  width: auto;
-  height: auto;
-  font-size: xx-large;
-  text-decoration: none;
-  color: #c21500;
-  background-color: #ffffff;
-  border-radius: 30%;
-  font-family: 'Arimo';
-  padding: 10px;
-}
-/* --------------------------------------- */
-/* POPUP */
-/* --------------------------------------- */
-
-.overlay{
-  background-color: rgba(0,0,0,.5);
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+form{
   display: flex;
-  align-items: center;
   justify-content: center;
-  visibility: hidden;
+  align-items: center;
 }
 
-.overlay:active{
-  visibility: visible;
+form label{
+  font-family: Arial;
+  font-size: xx-large;
+  width: 35vw;
+  height: 10vh;
+  color: white;
 }
 
-.popup{
-  background-color: #f8f8f8;
-  box-shadow: 0 0 5px 0px rgba(0,0,0,0.5);
-  border-radius: 3px;
-  font-family: 'Montserrat', sans-serif;
-  padding: 20px;
-  text-align: center;
-  width: 600px;
-
-
+input{
+margin-bottom: 50px;
+text-decoration: none;
 }
 
-.popup .btn-cerrar-popup{
-  font-size: 16px;
-  line-height: 16px;
-  display: block;
-  text-align: right;
-  color: #505050;
-  transition: .3s ease all;
-}
-
-.popup .btn-cerrar-popup:hover {
-  color: #c21500;
-}
-
-.popup h3{
-  font-size: 36px;
-  font-weight: 600px;
-  margin-bottom: 10px;
-  /* opacity: 0; */
-}
-
-.popup p{
-  font-size: 26px;
-  font-weight: 300px;
-  margin-bottom: 10px;
-  color: rgb(0, 0, 0);
-  /* opacity: 0; */
+.inputLista:hover{
+border-color: #ffffff;
+transition: ease all 1s;
 }
 
 .asd{
-  font-family: Arial;
-  font-size: 3em;
-  background-color: rgba(245, 245, 245, 0.561);
-  border-radius: 15px;
-  padding: 20px;
-  color: #807f7f52;
-  text-decoration: none;
-  font-family: monospace;   
+font-family: Arial;
+font-size: 3em;
+background-color: rgba(245, 245, 245, 0.561);
+border-radius: 15px;
+padding: 20px;
+color: #807f7fc9;
+text-decoration: none;
+font-family: monospace;   
 }
 
 .asd:hover{
-  color: rgb(0, 64, 255);
-  background-color: #ffffffd8;
-  transition: 2s ease all;
+color: #000;
+background-color: #ffffff;
+transition: 1s ease all;
 }
