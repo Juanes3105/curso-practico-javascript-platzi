@@ -9,15 +9,22 @@
 </head>
 <body>
     <header>
+      <a href="index.html" class="asd">←</a>
         <h1>Calcula la mediana salarial de cualquier lista</h1>
       </header>
       <form action="">
         <label for="inputLista">
           Escribe un <strong>Nuevo Valor</strong> a la lista
         </label>
-        <input type="number" id="inputLista" class="inputLista" />
-        <input type="button"  class="btn-grad-b" value="Agregar numero a lista" onclick="calcularMediaAritmetica()">
+        <input type="text" id="inputLista" class="inputList" />
+        <input type="button"  class="btn-grad-b" value="Agregar numero a lista" onclick="meterValorLista()">
         <input type="button"  class="btn-grad" value="Calcular la mediana salarial" onclick="calcularPromedio()">
+      <div class="">
+        <h2>Lista de elementos</h2>
+        <p id="lista"></p>
+        <h3>Resultado:</h3>
+        <p id="Resultado"></p>
+      </div>
     <script src="./salarios.js"></script>
     <script src="./analisis.js"></script>
 </body>
